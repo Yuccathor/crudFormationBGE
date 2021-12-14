@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="crud.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+<!--
+   Afficher la liste des utilisateurs
+    -Demande à un script d'appeler un php (en asynchrone : fetch/Ajax) qui va lire la table 
+    des utilisateurs et qui va renvoyer toutes les lignes de la table
+    -à ce niveau le php a envoyé les données au JS.
+    -Le JS va modifier le DOM pour inserer les données dans un tableau
+-->
+<div id="wrapper">
+<table>
+    <thead>
+        <tr>
+            <th class="liseretTableau">Pseudo</th>
+            <th class="liseretTableau">Alias</th>
+            <!-- <th class="liseretTableau">Tel</th>
+            <th class="liseretTableau">Mail</th> -->
+            <th class="icone liseretTableau">_Visu_</th>
+            <th class="liseretTableau">_Modif_</th>
+            <th class="liseretTableau">_Suppr_</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody id="userList">
+
+    </tbody>
+
+    <tfoot>
+
+    </tfoot>
+
+</table>
+
+
+</div>
+
+
+
+</body>
+</html>
